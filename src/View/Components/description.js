@@ -10,7 +10,7 @@ const description = () => {
     return (
         <div className="description bg_blue">
             <h1>{title}</h1>
-            <img src={src_img} className='img_name'></img>
+            <img src={src_img} className='img_name' alt=""></img>
             <p className='text_lines'>{text}</p>
         </div>
     )

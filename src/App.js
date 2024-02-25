@@ -1,11 +1,12 @@
 
 import './App.css';
-import Home from './View/Home'
+import Controller from './controller/contr_home.js';
 
 function App() {
   return (
     <div className="App">
-      <Home />
+      <Controller />
+      
     </div>
   );
 }

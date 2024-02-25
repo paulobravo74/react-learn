@@ -10,7 +10,7 @@
     background-color: blue;
 }
 
-.home {
+.banner {
     background-color: rgb(235, 235, 235);
     margin-left: 0%;
     margin-right: 0%;
@@ -40,4 +40,16 @@
 
 .description {
     background-color: rgb(200, 200, 200);
+}
+
+.arrows {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-left: 15px;
+}
+
+.left, .rigth {
+    background-color: rgb(200, 200, 200);
+    padding: 10px;
 }
