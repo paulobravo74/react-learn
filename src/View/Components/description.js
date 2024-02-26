@@ -1,5 +1,3 @@
-import '../Home.css'
-
 
 
 const title = "Mad Science";
