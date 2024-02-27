@@ -73,4 +73,11 @@
 .forms {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+
+.insName {
+  display: flex;
+  justify-content: left;
 }
