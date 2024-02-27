@@ -6,7 +6,7 @@ export default function Identity() {
     const [name, setName] = useState("");
     const [surname, setSurname] = useState("");
     const [displayText, setDisplayText] = useState("");
-
+    const [displayList, setDisplayList] = useState([]);
     
 
     function getName(e) {
@@ -15,8 +15,8 @@ export default function Identity() {
     }
 
     function getSurname(e) {
-        const newSurname = e.target.value;
-        setSurname(newSurname);
+        
+        setSurname(e.target.value);
     }
 
     function handleSubmission() {
@@ -42,18 +42,29 @@ export default function Identity() {
         
     }
 
-    const array = ["person01", "person02", "person03"]
+    const [array, setArray] = useState([]);
 
     function listArray() {
         return (
             <ol>
-            <h1>Lista de Pessoas:</h1>
+            <h1>List of people:</h1>
                 {array.map((person, index) => (
                     <li key={index}>{person}</li>
                 ))}
             </ol>
-        )
-        }
+            )   
+    }
+
+    function addPerson() {
+        console.log("Add person");
+        console.log(array);
+        const newPerson = `person${array.length + 1}`;
+        setArray([...array, newPerson]);
+    }
+
+    function cleanList() {
+        setArray([])
+    }
 
     return (
         <div className="forms bg_red">
@@ -66,6 +77,8 @@ export default function Identity() {
             </div>
             {<p>{displayText}</p>} 
             {listArray()}
+            <button className="button" onClick={addPerson}>Add Person</button>
+            <button className="button" onClick={cleanList}>Clean</button>
         </ div>
     )
 }
