@@ -3,7 +3,7 @@ import React, { useState } from "react"
 export default function Counter() {
 
 
-    const [value, setValue] = React.useState(0)
+    const [value, setValue] = useState(0)
 
     function decrement() {
         setValue(value - 1)

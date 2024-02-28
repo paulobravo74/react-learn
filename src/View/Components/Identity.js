@@ -6,7 +6,6 @@ export default function Identity() {
     const [name, setName] = useState("");
     const [surname, setSurname] = useState("");
     const [displayText, setDisplayText] = useState("");
-    const [displayList, setDisplayList] = useState([]);
     
 
     function getName(e) {

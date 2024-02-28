@@ -7,7 +7,6 @@ import Counter from './View/Components/Counter';
 import Identity from './View/Components/Identity';
 
 
-
 export default function App() {
   return (
     <div className="App">
@@ -15,6 +14,7 @@ export default function App() {
       <Arrows />
       <Counter />
       <Identity />
+      
     </div>
   );
 }
